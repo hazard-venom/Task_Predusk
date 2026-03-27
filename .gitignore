@@ -1,0 +1,13 @@
+myenv/
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db
+
+input/*
+!input/.gitkeep
+
+output/*
+!output/.gitkeep
+
+src/*.pt
