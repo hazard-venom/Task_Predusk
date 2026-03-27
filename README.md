@@ -150,29 +150,6 @@ python .\src\main.py --output .\output\match_annotated.mp4
 - GPU execution depends on environment setup; having CUDA drivers alone is not enough if PyTorch was installed as a CPU-only build.
 - In the current checked environment for this repo, CUDA-capable hardware is present but the active virtual environment contains `torch 2.11.0+cpu`, so inference remains on CPU until PyTorch is reinstalled with CUDA support.
 
-## Submission Checklist
 
-- Codebase or GitHub repository
-- `README.md`
-- Annotated output video in `output/`
-- Per-ID heatmaps in `output/<video_name>_per_id_heatmaps/`
-- Public source video link
-- `technical_report.md`
-- Sample screenshots from the output video
-- 3-5 minute demo video explaining the approach
 
-## What You Still Need To Add Manually
 
-- The public source video URL used for the assignment
-- Final screenshots from your chosen video
-- The generated annotated output video file
-- The generated per-ID heatmap image files
-- The demo walkthrough video
-
-## Suggested Submission Notes
-
-- Mention the exact video used and why it was chosen.
-- State which classes you tracked.
-- Mention the final unique object count reported by the pipeline.
-- Include a few failure cases honestly, such as occlusion or similar-looking players.
-- If time permits, compare `yolov8n` against `yolov8s` on the same clip.
